@@ -1,12 +1,12 @@
 # 114-2 期中考
-## Web 程式設計 <br><br><br>
+### Web 程式設計 <br><br><br>
 # 進階會員系統
 
 ## 檔案結構說明 
 * `app.py` : Flask 主程式，包含所有路由邏輯、註冊驗證及民國日期轉換功能。
 * `users.json` : 本地資料儲存檔，記錄使用者帳號與個人資料。
 * `templates/` : 包含所有的 HTML 網頁模板（登入、註冊、公告、個人資料, 等等）。
-* `static/css/` : 網頁的模板。
+* `static/css/` : 網頁的樣子模板。
 * `requirements.txt` : 專案所需的 Python 套件清單（由 pip freeze 產生）。
 
 ##  額外管理文件說明
@@ -19,6 +19,7 @@
 `git clone https://github.com/seasalatte/1142midexam.git`
 2. 安裝必要套件 ：使用專案提供的 requirements.txt 安裝 Flask <br>
 `python -m pip install -r requirements.txt`
-3. 啟動程式 ：執行主程式來啟動 Flask 伺服器
+3. 啟動程式 ：執行主程式來啟動 Flask 伺服器 <br>
 `flask --debug run`
-4. 瀏覽網頁 ：在瀏覽器輸入網址 http://127.0.0.1:5000
+4. 瀏覽網頁 ：在瀏覽器輸入網址 <br>
+`http://127.0.0.1:5000`
