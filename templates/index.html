@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<article>
+    <hgroup>
+        <h1>{{ title }}</h1>
+        <p>本系統採用 JSON 檔案儲存資料，並使用 Session 管理登入狀態。</p>
+    </hgroup>
+    <footer>
+        <a href="{{ url_for('register_route') }}" role="button">📝 立即註冊</a>
+        <a href="{{ url_for('login_route') }}" role="button" class="secondary">🔑 會員登入</a>
+    </footer>
+</article>
+{% endblock %}

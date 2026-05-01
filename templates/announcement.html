@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<article>
+    <header><h2>📢{{ title }}</h2></header>
+    <div class="content">
+        <p>【{{ title }}】<br>歡迎使用簡易會員系統！</p>
+        <p>使用須知:</p>
+        <ol>
+            <li>請妥善保管您的帳號密碼</li>
+            <li>個人資料請如實填寫</li>
+            <li>管理員擁有最高權限，請謹慎操作</li>
+        </ol>
+        <p>如有問題，請聯繫系統管理員。</p>
+    </div>
+    <footer>
+        <a href="{{ url_for('profile') }}" role="button" class="secondary">個人資料</a>
+        {% if session.is_admin %}
+            <a href="{{ url_for('users_list_route') }}" role="button" class="primary">會員管理</a>
+        {% endif %}
+        <a href="{{ url_for('logout') }}" role="button" class="outline">登出</a>
+    </footer>
+</article>
+{% endblock %}
